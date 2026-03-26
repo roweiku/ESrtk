@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>um982_driver</name>
+  <version>0.1.0</version>
+  <description>ROS driver for UM982 GNSS module</description>
+  
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <!-- 依赖声明 -->
+  <depend>rospy</depend>
+  <depend>tf</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  
+  <!-- Python3 依赖 -->
+  <exec_depend>python3-pyserial</exec_depend>
+  <exec_depend>python3-pyproj</exec_depend>
+  
+  <!-- 导出节点 -->
+  <export>
+    <node name="um982_driver" pkg="um982_driver" type="um982_driver.py"/>
+  </export>
+</package>

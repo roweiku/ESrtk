@@ -1,0 +1,6 @@
+<launch>
+  <node name="um982_driver" pkg="um982_driver" type="um982_driver.py" output="screen">
+    <param name="port" value="/dev/ttyACM0" />
+    <param name="baud" value="961200" />
+  </node>
+</launch>
